@@ -1,4 +1,4 @@
-.header {
+#header {
   width: 100vw;
   height: 110vh;
   display: flex;
@@ -137,6 +137,17 @@
   cursor: pointer;
   position: absolute;
   bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.pink-arrow:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 /* -------------------------------------------- RESPONSIVE MEDIA SCREEN: -------------------------------------------- */
