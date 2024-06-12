@@ -1,6 +1,6 @@
-/* ---------------------- SECTION - FEATURED OPPORTUNITIES: ---------------------- */
+/* --------------------------------- SECTION - FEATURED OPPORTUNITIES: ----------------------------------- */
 #featured-opportunities {
-  padding: 35px 10px;
+  padding: 35px 0;
   width: 100%;
   height: auto;
   text-transform: uppercase;
@@ -68,7 +68,7 @@
 }
 
 
-/* ---------------------- SECTION - WELCOME: ---------------------- */
+/* -------------------------------------------- SECTION - WELCOME: -------------------------------------------- */
 #welcome {
   padding: 70px 90px 40px;
   display: flex;
@@ -117,19 +117,17 @@
   font-weight: 600;
 }
 
-/* ---------------------- SECTION - LOCATION: ---------------------- */
+/* -------------------------------------------- SECTION - LOCATION: -------------------------------------------- */
 #location {
   height: 450px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .map {
   flex: 1;
-  min-width: 600px;
 }
 
 .location-address {
@@ -137,7 +135,6 @@
   background-color: rgb(59,25,36);
   color: #fff;
   height: 100%;
-  padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,4 +175,44 @@
   outline: none;
   box-shadow: none;
   cursor: pointer;
+}
+
+/* -------------------------------------------- RESPONSIVE MEDIA SCREEN: -------------------------------------------- */
+
+@media screen and (max-width: 825px) {
+  #location {
+    width: 100%;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .location-address {
+    width: 100%;
+  }
+
+  .address-container {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #featured-opportunities {
+    padding: 25px 0;
+  }
+
+  .opportunities-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1100px) { 
+  #welcome {
+    flex-direction: column;
+  }
 }

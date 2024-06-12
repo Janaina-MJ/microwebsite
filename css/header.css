@@ -138,3 +138,26 @@
   position: absolute;
   bottom: 10px;
 }
+
+/* -------------------------------------------- RESPONSIVE MEDIA SCREEN: -------------------------------------------- */
+
+@media screen and (max-width: 825px) { 
+
+  #logo {
+    height: 25px;
+  }
+
+  .social-media a img {
+    width: 16px;
+  }
+  
+  .hbg-menu {
+    width: 29px;
+  }
+}
+
+@media screen and (max-width: 425px) { 
+  #navbar {
+    padding: 0 20px;
+  }
+}
