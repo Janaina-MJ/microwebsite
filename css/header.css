@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: top left;
   transition: 2s;
-  animation: fading alternate running ease-in-out 60s forwards infinite;
+  animation: fading 60s linear infinite;
 }
 
 @keyframes fading {
@@ -48,6 +48,7 @@
 #logo {
   width: auto;
   height: 37px;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -138,9 +139,6 @@
   position: absolute;
   bottom: 10px;
   transition: transform 0.2s ease;
-}
-
-.pink-arrow:hover {
   animation: bounce 1s infinite;
 }
 
