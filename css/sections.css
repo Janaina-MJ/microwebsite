@@ -70,7 +70,7 @@
 
 /* ---------------------- SECTION - WELCOME: ---------------------- */
 #welcome {
-  padding: 70px 90px;
+  padding: 70px 90px 40px;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -115,4 +115,67 @@
   color: #ff598f;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/* ---------------------- SECTION - LOCATION: ---------------------- */
+#location {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.map {
+  flex: 1;
+  min-width: 600px;
+}
+
+.location-address {
+  flex: 1;
+  background-color: rgb(59,25,36);
+  color: #fff;
+  height: 100%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-container {
+  min-width: 230px;
+}
+
+.location-address h2 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+  margin-bottom: 30px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.location-address p {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin-bottom: 24px;
+}
+
+.location-address p b {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+
+.button-view-map {
+  border: 3px solid #fff;
+  width: fit-content;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
