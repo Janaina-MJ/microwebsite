@@ -1,0 +1,64 @@
+/* ---------------------- SECTION - FEATURED OPPORTUNITIES: ---------------------- */
+#featured-opportunities {
+  padding: 37px 10px;
+  width: 100%;
+  height: auto;
+  text-transform: uppercase;
+  background-color: rgb(24,63,58);
+}
+
+#featured-opportunities h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 23px;
+  padding-left: 80px;
+}
+
+.opportunities-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-opportunity {
+  background-color: #fff;
+  min-width: 410px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.job-title {
+  padding: 26px 20px;
+  flex: 2;
+}
+
+.job-title p strong {
+  font-weight: 600;
+}
+
+.job-location {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.btn-to-apply {
+  border: none;
+  background-color: rgb(236,101,143);
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 9px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: background-color 1s;
+}
+
+.btn-to-apply:hover {
+  background-color: rgb(59,25,36);
+}

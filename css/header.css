@@ -2,7 +2,7 @@
   width: 100vw;
   height: 110vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url("../img/hero_image_one.jpg");
@@ -24,13 +24,12 @@
 
 @-webkit-keyframes fading {
   0% { background-image: url("../img/hero_image_one.jpg");}
-  33.33% { background-image: url("../img/hero_image_two.jpg");}
-  66.66% { background-image: url("../img/hero_image_three.jpg")}
+  20% { background-image: url("../img/hero_image_two.jpg");}
+  40% { background-image: url("../img/hero_image_two.jpg");}
+  60% { background-image: url("../img/hero_image_three.jpg");}
+  80% { background-image: url("../img/hero_image_three.jpg")}
   100% { background-image: url("../img/hero_image_one.jpg");}
 }
-
-
-
 
 #navbar {
   height: 75px;
@@ -127,4 +126,15 @@
   outline: none;
   box-shadow: none;
   cursor: pointer;
+}
+
+.pink-arrow {
+  border: none;
+  width: 53px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
 }
