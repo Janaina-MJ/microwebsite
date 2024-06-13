@@ -40,3 +40,27 @@ document.getElementById("open-menu").addEventListener('click', function() {
 document.getElementById("close-menu").addEventListener('click', function() {
   document.getElementById("menu").classList.remove("show-menu");
 });
+
+//slideshow function
+const slides = [
+  "./img/hero_image_one.jpg",
+  "./img/hero_image_two.jpg",
+  "./img/hero_image_three.jpg",
+];
+
+let counter = 0;
+const sliderDiv = document.getElementById("slideshow");
+
+function slideShowBg() {
+
+  sliderDiv.style.opacity = 0.8;
+
+  setTimeout(()=>{
+    counter = (counter + 1) % slides.length;
+    sliderDiv.style.backgroundImage = `url(${slides[counter]})`;
+    sliderDiv.style.opacity = 1;
+  }, 400);
+}
+
+sliderDiv.style.backgroundImage = `url(${slides[counter]})`;
+setInterval(slideShowBg, 8000);
