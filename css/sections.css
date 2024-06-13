@@ -179,6 +179,12 @@
 
 /* -------------------------------------------- RESPONSIVE MEDIA SCREEN: -------------------------------------------- */
 
+@media screen and (max-width: 600px) {
+  #welcome {
+    padding: 70px 40px 40px;
+  }
+}
+
 @media screen and (max-width: 825px) {
   #location {
     width: 100%;
