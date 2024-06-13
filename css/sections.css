@@ -187,6 +187,11 @@
   outline: none;
   box-shadow: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-view-map:hover {
+  background-color: #ff598f;
 }
 
 /* -------------------------------------------- RESPONSIVE MEDIA SCREEN: -------------------------------------------- */
