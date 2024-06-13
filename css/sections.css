@@ -87,6 +87,12 @@
   margin-bottom: 30px;
 }
 
+.welcome-text h2 span {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 198, 181, 0.9);
+  text-underline-offset: 7px;
+}
+
 .welcome-text p {
   font-size: 1.2rem;
   font-weight: 400;
@@ -151,6 +157,12 @@
   margin-bottom: 30px;
   font-weight: 500;
   width: 100%;
+}
+
+.location-address h2 span {
+  text-decoration: underline;
+  text-decoration-color: #ff598f;
+  text-underline-offset: 7px;
 }
 
 .location-address p {
